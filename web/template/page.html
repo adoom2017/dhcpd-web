@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DHCP分配地址</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>DHCP分配地址</h1>
+  </header>
+  <main>
+    <div class="controls">
+      <label for="state-filter">State:</label>
+      <select id="state-filter">
+          <option value="">All</option>
+          <option value="free">Free</option>
+          <option value="active">Active</option>
+          <option value="abandoned">Abandoned</option>
+          <!-- Add other states as needed -->
+      </select>
+      <button id="apply-filter">搜索</button>
+    </div>
+    <div>已分配地址: <span id="total-ips"></span></div>
+    <div class="card-grid">
+      <!-- card elements will be generated here -->
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9; /* light gray background */
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* gap between cards */
+  }
+  
+  .card {
+    background-color: #fff; /* white background */
+    padding: 20px;
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .card h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+  }
+  .card p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .card:hover {
+    /* subtle hover effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* darker shadow effect on active state */
+  }
